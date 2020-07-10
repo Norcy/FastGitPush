@@ -14,7 +14,7 @@ git push
 ```
 
 
-虽然有 `gaa` `gcm` 等 alias 提高单行命令的效率，但是用起来依然麻烦
+虽然有 `gaa`、`gcm`、`gp` 等 alias 提高单行命令的效率，但是用起来依然麻烦
 
 Now，你只要使用该方法，就可以一键提交，且不需要为 commit message 添加双引号
 
