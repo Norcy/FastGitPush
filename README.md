@@ -14,10 +14,12 @@ git push
 
 虽然有 `gaa`、`gcm`、`gp` 等 alias 提高单行命令的效率，但是用起来依然麻烦
 
+对于我这种对重复工作容忍度很低的人实在是灾难
+
 Now，你只要使用该方法，就可以一键提交，且不需要为 commit message 添加双引号
 
 ```sh
-ppp 这是 支持 空格的 message
+pp 这是 支持 空格的 message
 ```
 
 
@@ -27,7 +29,7 @@ ppp 这是 支持 空格的 message
 编辑 `~/.zshcr`，添加以下 alias，然后执行 `source ~/.zshrc`
 
 ```sh
-alias ppp='_f() {
+alias pp='_f() {
 git add --all && 
 who=`whoami`
 commitMessage="Auto Commit [by ${who}]"
