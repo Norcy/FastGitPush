@@ -27,12 +27,12 @@ ppp 这是 支持 空格的 message
 编辑 `~/.zshcr`，添加以下 alias，然后执行 `source ~/.zshrc`
 
 ```sh
-alias ppp='_f(){
+alias ppp='_f() {
 git add --all && 
 who=`whoami`
 commitMessage="Auto Commit [by ${who}]"
 if [ $# -gt 0 ] ; then
-	commitMessage=$*" [by ${who}]"
+    commitMessage=$*" [by ${who}]"
 fi
 git commit -m "$commitMessage" && git pull --rebase && git push}; _f'
 ```
