@@ -8,8 +8,8 @@
 
 ```sh
 git add --all
-git pull --rebase
 git commit -m "这是需要加双引号的 message"
+git pull --rebase
 git push
 ```
 
@@ -30,13 +30,13 @@ ppp 这是 支持 空格的 message
 
 ```sh
 alias ppp='_f(){
-git add --all && git pull --rebase && 
+git add --all && 
 who=`whoami`
 commitMessage="Auto Commit [by ${who}]"
 if [ $# -gt 0 ] ; then
 	commitMessage=$*" [by ${who}]"
 fi
-git commit -m "$commitMessage"}; _f'
+git commit -m "$commitMessage" && git pull --rebase && git push}; _f'
 ```
 
 
